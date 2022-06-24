@@ -1,13 +1,12 @@
 module.exports = {
   env: {
-    browser: true,
-    es2021: true,
     node: true,
   },
   extends: ["eslint:recommended", "plugin:vue/essential"],
   parserOptions: {
-    ecmaVersion: "latest",
-    sourceType: "module",
+    "parser": "babel-eslint",
+    "ecmaVersion": 2019,
+    "sourceType": "module"
   },
   plugins: ["vue"],
   rules: {
